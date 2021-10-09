@@ -16,7 +16,15 @@
             var adaption5 = document.getElementById('li-fifth');
             var th = 0;
             function loop(){
-                if(window.innerWidth < 762){
+                if(window.innerWidth < 304){
+                    th = window.innerWidth/5.13;
+                    adaption1.style.width = th+'px';
+                    adaption2.style.width = th+'px';
+                    adaption3.style.width = th+'px';
+                    adaption4.style.width = th+'px';
+                    adaption5.style.width = th+'px';
+                }
+                else if(window.innerWidth < 762){
                     th = window.innerWidth/5.1;
                     adaption1.style.width = th+'px';
                     adaption2.style.width = th+'px';
