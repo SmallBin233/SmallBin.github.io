@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="uff-8">
-    <title>2233</title>
+    <meta charset="utf-8">
+    <title>网页</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/vue.global.js"></script>
 </head>
-<body style="padding: 0rem;margin: 0rem;">
-    <div style="background-color: yellowgreen; text-align: center;">
-        <div>网站</div>
+<body>
+    <div class="all" >
+        <div id="container-first" >
+            <div class="container-header"></div>
+            <div class="container-header" id="navigation-bar-mainmenu">
+                <ul>
+                    <a href=""><li onmouseout="changeReturnFirst()" onmouseover="changeGrayFirst()" id="li-first">主页</li></a>
+                    <a href=""><li onmouseout="changeReturnSecond()" onmouseover="changeGraySecond()" id="li-second">视频</li></a>
+                    <a href=""><li onmouseout="changeReturnThird()" onmouseover="changeGrayThird()" id="li-third">教程</li></a>
+                    <a href=""><li onmouseout="changeReturnFourth()" onmouseover="changeGrayFourth()" id="li-fourth">资源</li></a>
+                    <a href=""><li onmouseout="changeReturnFifth()" onmouseover="changeGrayFifth()" id="li-fifth">公告</li></a>
+                </ul>
+            </div>
+            <div class="container-header" id="navigation-bar-">
+                
+            </div>
+        </div>
+        <div class="container-middle">
+            4
+        </div>
+        <div class="container-footer">
+            5
+        </div>
     </div>
-    <div style="font-size: 25px; text-align: center;"><strong>
-        这就是一个测试网站——SmallBin</strong>
+    <div>
     </div>
+    </div>
+    <script type="text/javascript" src="js/container-header.js"></script>
 </body>
