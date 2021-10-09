@@ -2,7 +2,7 @@
 <head>
     <link rel="icon" type="image/x-icon" href="images/icon.ico">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>神奇的网页</title>
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/vue.min.js"></script>
@@ -16,16 +16,8 @@
             var adaption5 = document.getElementById('li-fifth');
             var th = 0;
             function loop(){
-                if(window.innerWidth < 304){
+                if(window.innerWidth < 762){
                     th = window.innerWidth/5.13;
-                    adaption1.style.width = th+'px';
-                    adaption2.style.width = th+'px';
-                    adaption3.style.width = th+'px';
-                    adaption4.style.width = th+'px';
-                    adaption5.style.width = th+'px';
-                }
-                else if(window.innerWidth < 762){
-                    th = window.innerWidth/5.1;
                     adaption1.style.width = th+'px';
                     adaption2.style.width = th+'px';
                     adaption3.style.width = th+'px';
