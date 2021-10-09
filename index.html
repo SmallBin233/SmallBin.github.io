@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/vue.min.js"></script>
     <script type="text/javascript" src="js/vue.global.js"></script>
+    <script>
+        window.onload = function(){
+            var adaption1 = document.getElementById('li-first');
+            var adaption2 = document.getElementById('li-second');
+            var adaption3 = document.getElementById('li-third');
+            var adaption4 = document.getElementById('li-fourth');
+            var adaption5 = document.getElementById('li-fifth');
+            var th = 0;
+            function loop(){
+                if(window.innerWidth < 755){
+                    th = window.innerWidth/5.1;
+                    adaption1.style.width = th+'px';
+                    adaption2.style.width = th+'px';
+                    adaption3.style.width = th+'px';
+                    adaption4.style.width = th+'px';
+                    adaption5.style.width = th+'px';
+                }
+                else if(window.innerWidth >= 755){
+                    adaption1.style.width = '150px';
+                    adaption2.style.width = '150px';
+                    adaption3.style.width = '150px';
+                    adaption4.style.width = '150px';
+                    adaption5.style.width = '150px';
+                }
+            }
+            setInterval(loop,1)
+        }
+    </script>
 </head>
 <body>
     <div class="all" >
